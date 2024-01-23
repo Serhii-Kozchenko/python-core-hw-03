@@ -15,6 +15,6 @@ def get_days_from_today(date: str):
         print(f"Error: {error}")
 
 
-print(get_days_from_today('2024-03-03'))
+print(get_days_from_today('2024-09-01'))
 print(get_days_from_today('2024-01-01'))
 print(get_days_from_today(2024))
