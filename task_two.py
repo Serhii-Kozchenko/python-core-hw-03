@@ -20,3 +20,6 @@ def get_numbers_ticket(min:int, max:int, quantity:int):
        
 print(get_numbers_ticket(1, 49, 6))
 print(get_numbers_ticket(1, 1001, 6))
+
+
+
