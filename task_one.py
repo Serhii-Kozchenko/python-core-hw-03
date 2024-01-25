@@ -9,8 +9,8 @@ def get_days_from_today(date: str):
         date_today = datetime.today()
         calculation_date = datetime.strptime(date, '%Y-%m-%d')
         result = calculation_date.toordinal() - date_today.toordinal()
-        return f"До {date} залишилось: {result} днів"
-
+        return result
+       
     except Exception as error:
         print(f"Error: {error}")
 

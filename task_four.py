@@ -22,13 +22,8 @@ def get_upcoming_birthdays(users):
                     {'name': user['name'], 'birthday': birth_date.strftime("%Y.%m.%d")})
 
             else:
-                if (birth_date + timedelta(days=1)).weekday() == 0:
-                    birthdays.append({'name': user['name'], 'birthday': (
-                        birth_date + timedelta(days=1)).strftime("%Y.%m.%d")})
-
-                if (birth_date + timedelta(days=2)).weekday() == 0:
-                    birthdays.append({'name': user['name'], 'birthday': (
-                        birth_date + timedelta(days=2)).strftime("%Y.%m.%d")})
+                birthdays.append({'name': user['name'], 'birthday': (
+                    birth_date + timedelta(days=7 - week_day)).strftime("%Y.%m.%d")})
 
     return birthdays
 
