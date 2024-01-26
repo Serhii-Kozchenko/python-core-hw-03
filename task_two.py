@@ -9,15 +9,12 @@ import random
 
 def get_numbers_ticket(min: int, max: int, quantity: int):
     lottery_numbers = []
-    if min >= 1 and max <= 1000:
-        if quantity <= max - min:
-            lottery_numbers = random.sample(range(min, max), quantity)
-        else:
-            lottery_numbers = random.sample(range(min, max), max - min)
+    if min >= 1 and max <= 1000 and quantity <= max - min:
+        lottery_numbers = random.sample(range(min, max), quantity)
         lottery_numbers.sort()
         return lottery_numbers
     else:
-        print('Значення min та max повинні бути в діапазоні від 1 до 1000')
+        print("Введіть коректні значення")
         return []
 
 

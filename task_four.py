@@ -23,7 +23,7 @@ def get_upcoming_birthdays(users):
 
             else:
                 birthdays.append({'name': user['name'], 'birthday': (
-                    birth_date + timedelta(days=7 - week_day)).strftime("%Y.%m.%d")})
+                    birth_date + timedelta(days=8 - week_day)).strftime("%Y.%m.%d")})
 
     return birthdays
 
